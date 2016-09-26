@@ -127,11 +127,13 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 
 * It is important to destroy objects that are no longer needed to free up heap memory so that it can be reused to create new objects
 
-* The heap is typically allocated at application startup by the runtime, and is reclaimed when the application (technically process) exits.
+* The heap is typically allocated at application startup by the runtime, and is reclaimed when the application exits.
 
 * The size of the heap is set on application startup, but can grow as space is needed (the allocator requests more memory from the operating system).
 
-[https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png]
+* You would use the heap if you don't know exactly how much data you will need at runtime or if you need to allocate a lot of data.
+
+![](https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png?raw=true)
 
 [iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
 [What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
