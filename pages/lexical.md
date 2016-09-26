@@ -135,6 +135,7 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 
 ![](https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png?raw=true)
 
+#### LINKS
 [iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
 
 [What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
@@ -158,6 +159,29 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 -------
 
 ### STACK
+
+When a method (or function) is executed, a chunk of memory is allocated from a part of memory called the stack. This chunk of memory is called a frame, and the frame stores the values for variables declared inside the method. A variable declared inside a method is called a local variable.
+
+* The stack is always reserved in a LIFO(Last in first out) order, the most recently reserved block is always the next block to be freed.
+
+* Stack segment is used to store local variable.
+
+* Variables created on the stack will go out of scope and automatically deallocate.
+
+* Much faster to allocate in comparison to variables on the heap.
+
+* Usually has a maximum size already determined when your program starts
+
+![](https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png?raw=true)
+
+#### LINKS
+[iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
+
+[What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
+
+[What and where are the stack and heap?](http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
+
+[Stack and Heap](https://vikashazrati.wordpress.com/2007/10/01/quicktip-java-basics-stack-and-heap/)
 
 # W
 -------
