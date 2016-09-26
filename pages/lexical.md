@@ -54,6 +54,17 @@ A block is an object, because the first variable within the region of memory tha
 
 [Zen and the Art of the Objective-C Craftsmanship](https://github.com/objc-zen/objc-zen-book#blocks)
 
+# C
+-------
+
+### CLANG
+
+### CONTRAVARIANCE
+
+### COVARIANCE
+
+### CURRYING
+
 # D
 -------
 
@@ -66,9 +77,17 @@ A delegate allows one object to send messages to another object when an event ha
 
 * Use weak for delegate to avoid memory leak and retain cycle.
 
+# F
+-------
+
+### FUNCTOR
+
 
 # G
 -------
+
+###GCC
+
 
 ### GCD: GRAND CENTRAL DISPATCH
 Technology to optimize application support for systems with multi-core processors and other symmetric multiprocessing systems.
@@ -93,6 +112,27 @@ Technology to optimize application support for systems with multi-core processor
 
 [Grand Central Dispatch vs NSThreads?](http://stackoverflow.com/questions/9238135/grand-central-dispatch-vs-nsthreads)
 
+
+# H
+-------
+
+### HEAP
+
+#L
+-------
+
+### LLDB
+
+# M
+-------
+
+### MONADS
+
+
+# S
+-------
+
+### STACK
 
 # W
 -------
