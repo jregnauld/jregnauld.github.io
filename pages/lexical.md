@@ -102,6 +102,28 @@ A delegate allows one object to send messages to another object when an event ha
 
 ### FUNCTOR
 
+* A Functor is any type that defines how map applies to it
+
+* Example: map magically applies this function, because Optional is a Functor. It specifies how map applies to Some S  and None S
+
+```
+Optional.Some(2).map { $0 + 3 }
+```
+
+* A functor is a type that implements map.
+
+* Chain transformations of contained value
+
+* It allows us to get a new container, where the value(s) wrapped inside are transformed according to a function
+
+#### LINKS
+[Using Monads and Other Functional Paradigms in Practice](https://realm.io/news/slug-raheel-ahmad-using-monads-functional-paradigms-in-practice-functors-patterns-swift/)
+
+[Swift Functors, Applicatives, and Monads in Pictures](http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/)
+
+[Functor and Monad in Swift ](http://www.javiersoto.me/post/106875422394)
+
+[What The Heck Is A Monad](http://khanlou.com/2015/09/what-the-heck-is-a-monad/)
 
 # G
 -------
@@ -186,6 +208,28 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 
 ### MONADS
 
+* A monad is a type of Functor
+
+* A monad is a type that implements flatMap.
+
+* Chain operations on contained value
+
+![](http://adit.io/imgs/functors/recap.png?raw=true)
+
+* functors: you apply a function to a wrapped value using map.
+
+* applicatives: you apply a wrapped function to a wrapped value using apply, if defined.
+
+* monads: you apply a function that returns a wrapped value, to a wrapped value using flatMap.
+
+#### LINKS
+[Using Monads and Other Functional Paradigms in Practice](https://realm.io/news/slug-raheel-ahmad-using-monads-functional-paradigms-in-practice-functors-patterns-swift/)
+
+[Swift Functors, Applicatives, and Monads in Pictures](http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/)
+
+[Functor and Monad in Swift ](http://www.javiersoto.me/post/106875422394)
+
+[What The Heck Is A Monad](http://khanlou.com/2015/09/what-the-heck-is-a-monad/)
 
 # S
 -------
