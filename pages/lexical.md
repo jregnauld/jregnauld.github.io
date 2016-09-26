@@ -63,13 +63,17 @@ A block is an object, because the first variable within the region of memory tha
 
 ### CLANG
 Clang is a compiler front end for the programming languages C, C++, Objective-C, Objective-C++. It uses LLVM as its back end and has been part of the LLVM release cycle.
+
 Clang can parse and analyze any source code in the C language family (C, C++, ObjectiveC, etc…) and has a wonderful modular design that makes it easy to use.
+
 The Clang Static Analyzer is a tool that automatically finds bugs in your code.
+
 The Clang frontend provides more accurate error messages than GCC.
 
 #### HOW
 
 *  Clang will run the Preprocessor (expanding all macros) and parse your source code into an Abstract Syntax Tree (AST)
+
 * If you need to analyze or modify code at the source level, Clang is better than LLVM. Doing analysis with LLVM means you must use LLVM’s internal representation of the code, which is similar to assembly.
 
 #### LINKS
@@ -128,7 +132,7 @@ Optional.Some(2).map { $0 + 3 }
 # G
 -------
 
-###GCC
+### GCC
 
 The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project supporting various programming languages. It's not use anymore for iOS Project.
 
