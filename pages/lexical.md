@@ -20,13 +20,8 @@ tags:
   - "foo boo"
   - "city tx"
 ---
-While I studied, I did a lot of research to re-memorize things and to dig in more about others things.
 
-This page contains my research as notes and ordered by letters.
-
-Furthermore you often know your stuff, but you don't find word to explain it, maybe it should help.
-
-The idea is to keep every note as short as possible.
+The idea is to keep every note on something useful as short as possible.
 
 # A
 -------
