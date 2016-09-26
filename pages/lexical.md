@@ -28,6 +28,10 @@ Furthermore you often know your stuff, but you don't find word to explain it, ma
 
 The idea is to keep every note as short as possible.
 
+# A
+-------
+
+### AUTORELEASE POOL
 
 # B
 -------
@@ -118,6 +122,21 @@ Technology to optimize application support for systems with multi-core processor
 
 ### HEAP
 
+The heap is where all Objective-C objects live. It is a giant heaping mess of objects. You use pointers to keep track of where those objects are stored in the heap.
+When you send the alloc message to a class, a chunk of memory is allocated from the heap. This chunk is your object, and it includes space for the object’s instance variables.
+
+* It is important to destroy objects that are no longer needed to free up heap memory so that it can be reused to create new objects
+
+* The heap is typically allocated at application startup by the runtime, and is reclaimed when the application (technically process) exits.
+
+* The size of the heap is set on application startup, but can grow as space is needed (the allocator requests more memory from the operating system).
+
+[https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png]
+
+[iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
+[What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
+[What and where are the stack and heap?](http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
+[Stack and Heap](https://vikashazrati.wordpress.com/2007/10/01/quicktip-java-basics-stack-and-heap/)
 #L
 -------
 
