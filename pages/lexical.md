@@ -62,6 +62,22 @@ A block is an object, because the first variable within the region of memory tha
 -------
 
 ### CLANG
+Clang is a compiler front end for the programming languages C, C++, Objective-C, Objective-C++. It uses LLVM as its back end and has been part of the LLVM release cycle.
+Clang can parse and analyze any source code in the C language family (C, C++, ObjectiveC, etc…) and has a wonderful modular design that makes it easy to use.
+The Clang Static Analyzer is a tool that automatically finds bugs in your code.
+The Clang frontend provides more accurate error messages than GCC.
+
+#### HOW
+
+*  Clang will run the Preprocessor (expanding all macros) and parse your source code into an Abstract Syntax Tree (AST)
+* If you need to analyze or modify code at the source level, Clang is better than LLVM. Doing analysis with LLVM means you must use LLVM’s internal representation of the code, which is similar to assembly.
+
+#### LINKS
+[Clang wikipedia](https://en.wikipedia.org/wiki/Clang)
+
+[Clang introduction](https://kevinaboos.wordpress.com/2013/07/23/clang-tutorial-part-i-introduction/)
+
+[LLVM vs. GCC for iOS development](http://stackoverflow.com/questions/4589335/llvm-vs-gcc-for-ios-development)
 
 ### CONTRAVARIANCE
 
@@ -92,6 +108,7 @@ A delegate allows one object to send messages to another object when an event ha
 
 ###GCC
 
+The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project supporting various programming languages. It's not use anymore for iOS Project.
 
 ### GCD: GRAND CENTRAL DISPATCH
 Technology to optimize application support for systems with multi-core processors and other symmetric multiprocessing systems.
@@ -148,6 +165,21 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 -------
 
 ### LLDB
+LLDB is a high-performance debugger.
+LLDB is the default debugger in Xcode on Mac OS X and supports debugging C, Objective-C and C++ on the desktop and iOS devices and simulator.
+
+#### LINKS
+[The LLDB Debugger](http://lldb.llvm.org/)
+
+### LLVM
+The LLVM(Low Level Virtual Machine) compiler infrastructure project  is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends.
+In Xcode, the LLVM compiler uses the Clang front end to parse source code and turn it into an interim format. Then the LLVM code generation layer (back end) turns that interim format into final machine code
+
+#### LINKS
+[LLVM Wikipedia](https://en.wikipedia.org/wiki/LLVM)
+
+[Apple doc](https://developer.apple.com/library/content/documentation/CompilerTools/Conceptual/LLVMCompilerOverview/index.html)
+
 
 # M
 -------
