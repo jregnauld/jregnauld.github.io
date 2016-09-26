@@ -136,9 +136,13 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 ![](https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png?raw=true)
 
 [iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
+
 [What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
+
 [What and where are the stack and heap?](http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
+
 [Stack and Heap](https://vikashazrati.wordpress.com/2007/10/01/quicktip-java-basics-stack-and-heap/)
+
 #L
 -------
 
