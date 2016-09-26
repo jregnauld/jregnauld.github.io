@@ -21,7 +21,11 @@ tags:
   - "city tx"
 ---
 
-The idea is to keep every note on something useful as short as possible.
+* The idea is to keep every note on something useful as short as possible.
+* Because sometimes you want to have a quick reminder.
+* One list to rule them all.
+
+![](https://media.giphy.com/media/YLHwkqayc1j7a/giphy.gif)
 
 # A
 -------
