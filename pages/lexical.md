@@ -78,7 +78,7 @@ Technology to optimize application support for systems with multi-core processor
 
 #### Advantages
 
-* Eliminate work on your parturient
+* Eliminate work on your part.
 
 * Reduces the memory penalty your application pays for storing thread stacks in the application's memory space.
 
@@ -89,7 +89,10 @@ Technology to optimize application support for systems with multi-core processor
 * Simplifies the code you have to write
 
 #### LINKS
-[Grand central dispatch on wikipedia]https://en.wikipedia.org/wiki/Grand_Central_Dispatch
+[Grand central dispatch on wikipedia](https://en.wikipedia.org/wiki/Grand_Central_Dispatch)
+
+[Grand Central Dispatch vs NSThreads?](http://stackoverflow.com/questions/9238135/grand-central-dispatch-vs-nsthreads)
+
 
 # W
 -------
