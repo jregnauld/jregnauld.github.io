@@ -17,8 +17,12 @@ sitemap:
     lastmod: 2016-02-13
 # tags will be used as html meta keywords.
 tags:
-  - "foo boo"
-  - "city tx"
+  - "iOS"
+  - "iOS Programming"
+  - "iOS Knowledge"
+  - "iOS Interview"
+  - "iOS Questions"
+
 ---
 
 * The idea is to keep every note on something useful as short as possible.
@@ -52,7 +56,7 @@ A block is an object, because the first variable within the region of memory tha
 * Mutable stack variables and pointers must be declared with the __block keyword
 
 
-#### LINKS
+##### LINKS
 [Effective Objective-C 2.0: 52 Specific Ways to Improve Your iOS and OS X Programs](https://www.amazon.com/Effective-Objective-C-2-0-Specific-Development/dp/0321917014)
 
 [Zen and the Art of the Objective-C Craftsmanship](https://github.com/objc-zen/objc-zen-book#blocks)
@@ -75,7 +79,7 @@ The Clang frontend provides more accurate error messages than GCC.
 
 * If you need to analyze or modify code at the source level, Clang is better than LLVM. Doing analysis with LLVM means you must use LLVM’s internal representation of the code, which is similar to assembly.
 
-#### LINKS
+##### LINKS
 [Clang wikipedia](https://en.wikipedia.org/wiki/Clang)
 
 [Clang introduction](https://kevinaboos.wordpress.com/2013/07/23/clang-tutorial-part-i-introduction/)
@@ -87,6 +91,36 @@ The Clang frontend provides more accurate error messages than GCC.
 ### COVARIANCE
 
 ### CURRYING
+ Translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
+
+```
+ function add (a, b) {
+  return a + b;
+}
+
+add(3, 4); returns 7
+```
+
+```
+ function add (a) {
+  return function (b) {
+    return a + b;
+  }
+}
+```
+
+```
+ add(3)(4);
+
+var add3 = add(3);
+
+add3(4);
+```
+
+##### LINKS
+[Introduction to Function Currying in Swift](https://robots.thoughtbot.com/introduction-to-function-currying-in-swift)
+
+[What is 'Currying'?](http://stackoverflow.com/questions/36314/what-is-currying)
 
 # D
 -------
@@ -119,7 +153,7 @@ Optional.Some(2).map { $0 + 3 }
 
 * It allows us to get a new container, where the value(s) wrapped inside are transformed according to a function
 
-#### LINKS
+##### LINKS
 [Using Monads and Other Functional Paradigms in Practice](https://realm.io/news/slug-raheel-ahmad-using-monads-functional-paradigms-in-practice-functors-patterns-swift/)
 
 [Swift Functors, Applicatives, and Monads in Pictures](http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/)
@@ -141,7 +175,7 @@ Technology to optimize application support for systems with multi-core processor
 * Implementation of task parallelism based on the thread pool pattern
 * Move the management of the thread pool out of the hands of the developer and closer to the operating system.
 
-#### Advantages
+##### Advantages
 
 * Eliminate work on your part.
 
@@ -153,7 +187,7 @@ Technology to optimize application support for systems with multi-core processor
 
 * Simplifies the code you have to write
 
-#### LINKS
+##### LINKS
 [Grand central dispatch on wikipedia](https://en.wikipedia.org/wiki/Grand_Central_Dispatch)
 
 [Grand Central Dispatch vs NSThreads?](http://stackoverflow.com/questions/9238135/grand-central-dispatch-vs-nsthreads)
@@ -177,7 +211,7 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 
 ![](https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png?raw=true)
 
-#### LINKS
+##### LINKS
 [iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
 
 [What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
@@ -193,14 +227,14 @@ When you send the alloc message to a class, a chunk of memory is allocated from 
 LLDB is a high-performance debugger.
 LLDB is the default debugger in Xcode on Mac OS X and supports debugging C, Objective-C and C++ on the desktop and iOS devices and simulator.
 
-#### LINKS
+##### LINKS
 [The LLDB Debugger](http://lldb.llvm.org/)
 
 ### LLVM
 The LLVM(Low Level Virtual Machine) compiler infrastructure project  is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends.
 In Xcode, the LLVM compiler uses the Clang front end to parse source code and turn it into an interim format. Then the LLVM code generation layer (back end) turns that interim format into final machine code
 
-#### LINKS
+##### LINKS
 [LLVM Wikipedia](https://en.wikipedia.org/wiki/LLVM)
 
 [Apple doc](https://developer.apple.com/library/content/documentation/CompilerTools/Conceptual/LLVMCompilerOverview/index.html)
@@ -215,6 +249,8 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 
 * A monad is a type that implements flatMap.
 
+* A monad is a special kind of a functor. A functor F takes each type T and maps it to a new type FT. A burrito is like a functor: it takes a type, like meat or beans, and turns it into a new type, like beef burrito or bean burrito.
+
 * Chain operations on contained value
 
 ![](http://adit.io/imgs/functors/recap.png?raw=true)
@@ -225,7 +261,7 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 
 * monads: you apply a function that returns a wrapped value, to a wrapped value using flatMap.
 
-#### LINKS
+##### LINKS
 [Using Monads and Other Functional Paradigms in Practice](https://realm.io/news/slug-raheel-ahmad-using-monads-functional-paradigms-in-practice-functors-patterns-swift/)
 
 [Swift Functors, Applicatives, and Monads in Pictures](http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/)
@@ -236,6 +272,32 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 
 # S
 -------
+
+### SOLID
+
+* Single responsibility principle
+  * a class should have only a single responsibility
+
+
+* Open/closed principle
+  * software entities … should be open for extension, but closed for modification
+
+
+* Liskov substitution principle
+  * objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program. ( you can use a cat instead of an animal, without issue.)
+
+
+* Interface segregation principle
+    * many client-specific interfaces are better than one general-purpose interface.
+
+
+* Dependency inversion principle
+  * one should “Depend upon Abstractions. Do not depend upon concretions.”
+
+##### LINKS
+[SOLID Wikipedia](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
+
+[From STUPID to SOLID Code](http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/)
 
 ### STACK
 
@@ -253,7 +315,7 @@ When a method (or function) is executed, a chunk of memory is allocated from a p
 
 ![](https://vikashazrati.files.wordpress.com/2007/10/stacknheap.png?raw=true)
 
-#### LINKS
+##### LINKS
 [iOS Programming: The Big Nerd Ranch Guide 5th Edition](https://www.bignerdranch.com/we-write/ios-programming/)
 
 [What is the difference between the stack and the heap?](https://www.quora.com/What-is-the-difference-between-the-stack-and-the-heap)
@@ -268,12 +330,12 @@ When a method (or function) is executed, a chunk of memory is allocated from a p
 ### WEAK
 Weak is used to create a weak reference (pointer) to an object which does not participate in keeping that object alive.
 
-#### WHEN
+##### WHEN
 Where you want to keep a reference to an object, but don't want to keep that object in memory beyond its normal lifetime.
 
 * Example: weak reference to self used in block can prevent retain cycle while ensuring that your program doesn't crash if the block is called after self is deallocated.
 
-#### HOW
+##### HOW
 On dealloc, on object containing weak points will remove them from the internal mapping table that their target back to them.
 
 Every class maintains a set of addresses of weak points that are pointing on it and when its dealloc is called its sets them all to zero.
@@ -282,7 +344,7 @@ Every class maintains a set of addresses of weak points that are pointing on it 
 
 * ARC just inserts the code to add a pointer to that every time the object is assigned to a new weak reference.
 
-#### LINKS
+##### LINKS
 [Zeroing Weak References](https://www.mikeash.com/pyblog/friday-qa-2010-07-16-zeroing-weak-references-in-objective-c.html)
 
 [How does the ARC's zeroing weak pointer behavior implemented?](http://stackoverflow.com/questions/8859666/how-does-the-arcs-zeroing-weak-pointer-behavior-implemented)
