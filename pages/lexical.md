@@ -33,6 +33,8 @@ tags:
 
 # A
 -------
+### ADAPTER
+
 
 ### AUTORELEASE POOL
 
@@ -88,7 +90,25 @@ The Clang frontend provides more accurate error messages than GCC.
 
 ### CONTRAVARIANCE
 
+Contravariance is when supertypes are accepted. The parameters of overridden methods are contravariant.
+
+Contravariant: an Animal[] is a Cat[]
+
+##### LINKS
+[Covariance and Contravariance](https://www.mikeash.com/pyblog/friday-qa-2015-11-20-covariance-and-contravariance.html)
+
+[Covariance and contravariance](https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science))
+
 ### COVARIANCE
+
+Covariance is when subtypes are accepted. Overridden read-only properties are covariant.
+
+Covariant: a Cat[] is an Animal[]
+
+##### LINKS
+[Covariance and Contravariance](https://www.mikeash.com/pyblog/friday-qa-2015-11-20-covariance-and-contravariance.html)
+
+[Covariance and contravariance](https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science))
 
 ### CURRYING
  Translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
@@ -243,6 +263,8 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 # M
 -------
 
+### MANAGER
+
 ### MONADS
 
 * A monad is a type of Functor
@@ -270,8 +292,23 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 
 [What The Heck Is A Monad](http://khanlou.com/2015/09/what-the-heck-is-a-monad/)
 
+### MVC
+
+### MVVM
+
+### MVP
+
+
+#R
+-------
+
+### REPOSITORY
+
+
 # S
 -------
+
+### SERVICE
 
 ### SOLID
 
@@ -323,6 +360,11 @@ When a method (or function) is executed, a chunk of memory is allocated from a p
 [What and where are the stack and heap?](http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
 
 [Stack and Heap](https://vikashazrati.wordpress.com/2007/10/01/quicktip-java-basics-stack-and-heap/)
+
+# V
+-------
+
+### VIPER
 
 # W
 -------
