@@ -38,6 +38,9 @@ tags:
 
 ### AUTORELEASE POOL
 
+
+
+
 # B
 -------
 
@@ -182,6 +185,13 @@ Optional.Some(2).map { $0 + 3 }
 
 [What The Heck Is A Monad](http://khanlou.com/2015/09/what-the-heck-is-a-monad/)
 
+### FUTURE
+
+Futures provide a way to reason about performing many operations in parallel– in an efficient and non-blocking way. A Future is a placeholder object for a value that may not yet exist. Generally, the value of the Future is supplied concurrently and can subsequently be used. Composing concurrent tasks in this way tends to result in faster, asynchronous, non-blocking parallel code.
+
+##### LINKS
+[Futures and Promises](http://docs.scala-lang.org/overviews/core/futures.html)
+
 # G
 -------
 
@@ -305,6 +315,12 @@ In Xcode, the LLVM compiler uses the Clang front end to parse source code and tu
 ### REPOSITORY
 
 
+### RETAIN CYCLE
+
+A retain cycle is what happens when two objects both have strong references to each other. If 2 objects have strong references to each other, ARC will not generate the appropriate release message code on each instance since they are keeping each other alive.
+
+![](https://static1.squarespace.com/static/5592eb03e4b051859f0b377f/5594defde4b0ad11495b5c4e/5594defde4b0ad11495b5c80/1435819784267/retain-cycle-copy.png?format=1000w&raw=true)
+
 # S
 -------
 
@@ -361,6 +377,18 @@ When a method (or function) is executed, a chunk of memory is allocated from a p
 
 [Stack and Heap](https://vikashazrati.wordpress.com/2007/10/01/quicktip-java-basics-stack-and-heap/)
 
+# U
+
+### UNOWNED
+When two instances are related in such a way that one of the instances can’t exist without the other, the instance with the mandatory dependency needs to hold an unowned reference to the other instance.
+
+* Use a weak reference whenever it is valid for that reference to become nil at some point during its lifetime. Conversely, use an unowned reference when you know that the reference will never be nil once it has been set during initialization.
+
+##### LINKS
+[Strong, Weak, and Unowned – Sorting out ARC and Swift](http://www.andrewcbancroft.com/2015/05/08/strong-weak-and-unowned-sorting-out-arc-and-swift/)
+
+["WEAK, STRONG, UNOWNED, OH MY!" - A GUIDE TO REFERENCES IN SWIFT](http://krakendev.io/blog/weak-and-unowned-references-in-swift)
+
 # V
 -------
 
@@ -386,7 +414,18 @@ Every class maintains a set of addresses of weak points that are pointing on it 
 
 * ARC just inserts the code to add a pointer to that every time the object is assigned to a new weak reference.
 
+* In Swift:
+  * Weak pointers look like regular pointers in memory.
+  * When a weak target's deinit runs, the target is not deallocated, and the weak pointer is not zeroed.
+  * When the weak pointer is accessed after the target's deinit runs, it is zeroed on access and the weak target is deallocated.
+  * The weak target contains a reference count for weak references, separate from the count of strong references.
+
 ##### LINKS
 [Zeroing Weak References](https://www.mikeash.com/pyblog/friday-qa-2010-07-16-zeroing-weak-references-in-objective-c.html)
 
 [How does the ARC's zeroing weak pointer behavior implemented?](http://stackoverflow.com/questions/8859666/how-does-the-arcs-zeroing-weak-pointer-behavior-implemented)
+
+# Z
+-------
+
+### NSZOMBIE
