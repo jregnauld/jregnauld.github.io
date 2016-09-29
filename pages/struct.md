@@ -1,3 +1,4 @@
+---
 layout: page
 title: Because you need to know your stuffs
 permalink: /struct/
@@ -255,6 +256,11 @@ func quicksort<T: Comparable>(_ a: [T]) -> [T] {
   return quicksort(less) + equal + quicksort(greater)
 }
 ```
+
+# Shortest Path
+
+* Goal: find the shortest route to go from one node to another in a graph.
+
 # Stack
 
 * A stack is like an array but with limited functionality. You can only push to add a new element to the top of the stack, pop to remove the element from the top, and peek at the top element without popping it off.
